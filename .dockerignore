@@ -1,0 +1,6 @@
+# Never send workspace files (especially private keys or the CA key) or git history
+# to the Docker daemon as part of the build context.
+*
+!Dockerfile
+!entrypoint.sh
+!askpass.sh

@@ -1,0 +1,17 @@
+# OS metadata
+.DS_Store
+
+# Generated key & certificate outputs in workspace subdirectories
+workspace/keys/
+workspace/ca/*
+!workspace/ca/README.md
+
+# Safety net: never commit cryptographic artifacts anywhere
+*.pub
+*.pem
+*.ppk
+*.key
+*.base64
+*.fingerprint
+*-cert.txt
+id_*
