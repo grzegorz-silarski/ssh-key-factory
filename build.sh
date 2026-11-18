@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Invoke this executable from either Bash or Zsh; the shebang runs it with Bash.
 set -euo pipefail
 
 PACKAGE_REPOSITORY="${PACKAGE_REPOSITORY:-https://dl-cdn.alpinelinux.org}"

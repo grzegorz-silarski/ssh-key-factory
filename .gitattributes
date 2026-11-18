@@ -1,0 +1,2 @@
+# Keep text files LF across platforms; Git detects and leaves binary files unchanged.
+* text=auto eol=lf

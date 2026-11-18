@@ -1,10 +1,6 @@
 ARG PACKAGE_REPOSITORY=https://dl-cdn.alpinelinux.org
 FROM alpine:3.23
 
-ENV REQUEST_NEW_CA_KEY=false \
-    OVERWRITE=false \
-    OVERWRITE_CA=false
-
 ARG PACKAGE_REPOSITORY
 RUN case "$PACKAGE_REPOSITORY" in \
       https://*[!A-Za-z0-9._:/-]*) echo "Invalid PACKAGE_REPOSITORY" >&2; exit 1 ;; \
